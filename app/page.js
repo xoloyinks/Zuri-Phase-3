@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import Gallery from './pages/gallary/page'
 
 export default function Home() {
   return (
     <section>
-        <h2 className='text-4xl'>Deployed!</h2>
+        <Gallery />
     </section>
   )
 }
