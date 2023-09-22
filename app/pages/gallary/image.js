@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+
 import img1 from "../images/2002327.jpg"
 import img2 from "../images/2002330.jpg"
 import img3 from "../images/2002331.jpg"
@@ -47,6 +48,7 @@ import img44 from "../images/2003162.jpg"
 import img45 from "../images/2003198.jpg"
 import img46 from "../images/2003199.jpg"
 import img47 from "../images/2003200.jpg"
+
 
 export const images = [
     {
@@ -244,7 +246,7 @@ export const Img = ({image}) => {
     return(
         <>
             <div>
-                 <Image width={0} height={0} alt='Image' src={image} placeholder= 'blur' blurDataURL= "../images/Eclipse-0.3s-250px.svg" className='w-full object-cover rounded-lg my-[1px] h-full' />
+                 <Image width={0} height={0} alt='Image' src={image} placeholder= "blur" blurDataURL= "../images/Eclipse-0.3s-250px.svg" className='w-full object-cover rounded-lg my-[1px] h-full' />
             </div>
         </>
     )

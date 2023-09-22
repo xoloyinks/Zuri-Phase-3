@@ -4,9 +4,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image'
 import { images } from './image';
 import { Img } from './image';
-import {BsSearch} from "react-icons/bs"
 import logo from "../images/logo.png"
-
 
 import { closestCenter, DndContext } from '@dnd-kit/core';
 import {
@@ -50,8 +48,8 @@ export default function Gallery() {
     var [filterImage , setFilterImage] = useState(images);
     const router = useRouter();
 
-    const handleLogin = () => {
-        router.push("/auth")
+    const handleSignOut = (e) => {
+        router.push("/api/auth/signout");
     }
 
 
@@ -85,7 +83,7 @@ export default function Gallery() {
                     <h1 className='text-xl font-bold min-w-fit md:text-4xl'>My Gallery</h1>
                 </div>
                 <div className='sm:w-[20%] text-right'>
-                    <button disabled onClick={handleLogin} className='px-5 py-3 max-[320px]:py-2 max-[320px]:text-[12px] text-sm text-white bg-black rounded-md' >Log in</button>
+                    <button onClick={handleSignOut} className='px-5 py-3 max-[320px]:py-2 max-[320px]:text-[12px] text-sm text-white bg-black rounded-md' >Sign out</button>
                 </div>
             </nav>
             
@@ -103,10 +101,6 @@ export default function Gallery() {
                     <div className='mt-3 text-sm text-gray-400' >
                         {filterImage.length} images found.
                     </div>
-
-                    {/* <div>
-                    {img.map((tag, key) => <button onClick={() => filterTag(tag.id)} className='px-3 py-2 mt-2  max-[320px]:mr-1 mr-3 bg-blue-300 rounded-md hover:text-white hover:bg-blue-500 focus:bg-blue-500'>{tag.id}</button> )}
-                    </div> */}
                 </div>
             
             {/* IMAGES SECTION */}
@@ -119,7 +113,6 @@ export default function Gallery() {
                    </SortableContext>
                 </DndContext>
             </section>
-
         </section>
     </>
   )

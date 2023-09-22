@@ -5,7 +5,7 @@ export const options = {
             name: "Credentials",
             credentials: {
                 username: {
-                    label: "Email: ",
+                    label: "UserName: ",
                     type: "email",
                     placeholder: "user@exaple.com",
                 },
