@@ -26,24 +26,4 @@ export const options = {
             }
         })
     ],
-    callbacks: {
-        jwt: async ({ token, user }) => {
-            if(user){
-                token.id = user.id;
-            }
-            return token;
-        },
-        session: ({ session, token }) => {
-            if(token){
-                session.id = token;
-            }
-
-            return session;
-        },
-    }, 
-    secret: "test",
-    jwt: {
-        secret: "text",
-        encryption: true,
-    }
 }
