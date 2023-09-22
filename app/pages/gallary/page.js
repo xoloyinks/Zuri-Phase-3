@@ -85,7 +85,7 @@ export default function Gallery() {
                     <h1 className='text-xl font-bold min-w-fit md:text-4xl'>My Gallery</h1>
                 </div>
                 <div className='sm:w-[20%] text-right'>
-                    <button onClick={handleLogin} className='px-5 py-3 max-[320px]:py-2 max-[320px]:text-[12px] text-sm text-white bg-black rounded-md' >Log in</button>
+                    <button disabled onClick={handleLogin} className='px-5 py-3 max-[320px]:py-2 max-[320px]:text-[12px] text-sm text-white bg-black rounded-md' >Log in</button>
                 </div>
             </nav>
             
