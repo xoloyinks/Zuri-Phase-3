@@ -93,12 +93,12 @@ export default function Gallery() {
                 <div className='gap-3 max-[320px]:text-[12px] font-semibold'>
                     <span className='mt-2 text-sm font-semibold min-w-fit min-h-fit'>Filter Tags: </span>
                     <div>
-                    <button onClick={() => filterTag("Terrestrial")} className='px-3 py-2 mt-2 mr-3 bg-blue-300 rounded-md hover:text-white hover:bg-blue-500 focus:bg-blue-500'>Terrestrials</button>
-                    <button onClick={() => filterTag("Wallpaper")} className='px-3 py-2 mt-2 mr-3 bg-blue-300 rounded-md hover:text-white hover:bg-blue-500'>Wallpapers</button>
-                    <button onClick={() => filterTag("Bird")} className='px-3 py-2 mt-2 mr-3 bg-blue-300 rounded-md hover:text-white hover:bg-blue-500'>Birds</button>
-                    <button onClick={() => filterTag("Fish")} className='px-3 py-2 mt-2 mr-3 bg-blue-300 rounded-md hover:text-white hover:bg-blue-500'>Fish</button>
-                    {/* <button onClick={() => filterTag("Rain")} className='px-3 py-2 mt-2 mr-3 bg-blue-300 rounded-md hover:text-white hover:bg-blue-500'>Rain</button> */}
-                    <button onClick={() => setFilterImage(images)} className='px-3 py-2 mt-2 mr-3 bg-blue-300 rounded-md hover:text-white hover:bg-blue-500'>All images</button>
+                    <button onClick={() => filterTag("Terrestrial")} className='px-3 py-2 mt-2 mr-1 text-sm bg-blue-300 rounded-md hover:text-white hover:bg-blue-500 focus:bg-blue-500'>Terrestrials</button>
+                    <button onClick={() => filterTag("Wallpaper")} className='px-3 py-2 mt-2 mr-1 text-sm bg-blue-300 rounded-md hover:text-white hover:bg-blue-500'>Wallpapers</button>
+                    <button onClick={() => filterTag("Bird")} className='px-3 py-2 mt-2 mr-1 text-sm bg-blue-300 rounded-md hover:text-white hover:bg-blue-500' text-sm>Birds</button>
+                    <button onClick={() => filterTag("Fish")} className='px-3 py-2 mt-2 mr-1 text-sm bg-blue-300 rounded-md hover:text-white hover:bg-blue-500' text-sm>Fish</button>
+                    {/* <button onClick={() => filterTag("Rain")} className='px-3 py-2 mt-2 mr-1 bg-blue-300 rounded-md hover:text-white hover:bg-blue-500'>Rain</button> */}
+                    <button onClick={() => setFilterImage(images)} className='px-3 py-2 mt-2 mr-1 text-sm bg-blue-300 rounded-md hover:text-white hover:bg-blue-500' text-sm>All images</button>
                     </div>
                     <div className='mt-3 text-sm text-gray-400' >
                         {filterImage.length} images found.
