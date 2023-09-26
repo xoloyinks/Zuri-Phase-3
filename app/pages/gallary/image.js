@@ -246,7 +246,7 @@ export const Img = ({image}) => {
     return(
         <>
             <div>
-                 <Image width={0} height={0} alt='Image' src={image} placeholder= "blur" blurDataURL= "../images/Eclipse-0.3s-250px.svg" className='w-full object-cover rounded-lg my-[1px] h-full' />
+                 <Image width={0} height={0} alt='Image' src={image} placeholder= "blur" blurDataURL= "../images/Dual Ring-0.5s-77pxd.svg" className='w-full object-cover rounded-lg my-[1px] h-full' />
             </div>
         </>
     )

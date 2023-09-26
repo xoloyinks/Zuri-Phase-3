@@ -1,4 +1,8 @@
 import CredentialsProvider from "next-auth/providers/credentials"
+
+const email = process.env.USER;
+const pwd = process.env.PASS;
+
 export const options = {
     providers: [
         CredentialsProvider({
@@ -12,11 +16,15 @@ export const options = {
                 password: {
                     label: "Password: ",
                     type: "password",
-                    placeholder: "*******",
+                    placeholder: "",
                 },
             },
             async authorize(credentials){
-                const user = {id: "42", name:"user@example.com", password: "1Password"};
+                const user = {
+                    id: "42", 
+                    name: email, 
+                    password: pwd
+                };
 
                 if(credentials?.username === user.name && credentials?.password === user.password){
                     return user
@@ -25,5 +33,8 @@ export const options = {
                 }
             }
         })
-    ],
+    ], 
+    pages: {
+        signIn: '/auth/signin',
+    }
 }
