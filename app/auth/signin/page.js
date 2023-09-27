@@ -39,7 +39,7 @@ export default function SignIn() {
                     <h1 className='my-2 text-3xl font-bold text-center'>Sign in</h1>
                     <form action="">
                         <label htmlFor="username" className='lg:text-[10px] text-[11px] font-bold'>Username</label><br />
-                        <Input onChange={(e) => (userName.current = e.target.value)} type="email" name="username" id="username" placeholder='user@example.com'  />
+                        <Input onChange={(e) => (userName.current = e.target.value)} type="email" name="username" id="username" placeholder='user@example.com' />
                         <br />
                         <label htmlFor="password" className='lg:text-[10px] text-[11px] font-bold'>Password</label><br />
                         <Input onChange={(e) => (password.current = e.target.value)} type="password" name="password" id="password" placeholder=''  />
