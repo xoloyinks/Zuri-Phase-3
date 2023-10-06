@@ -89,6 +89,8 @@ export default function Gallery() {
             
             {/* FILTER TAGS */}
                 <div className='gap-3 max-[320px]:text-[12px] font-semibold'>
+                    <p className='my-3 text-sm'>Drag and Drop Image to fit Specific position.</p> 
+
                     <span className='mt-2 text-sm font-semibold min-w-fit min-h-fit'>Filter Tags: </span>
                     <div>
                     <button onClick={() => filterTag("Terrestrial")} className='px-3 py-2 mt-2 mr-1 text-sm bg-blue-300 rounded-md hover:text-white hover:bg-blue-500 focus:bg-blue-500'>Terrestrials</button>
